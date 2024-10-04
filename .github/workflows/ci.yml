@@ -1,14 +1,1 @@
-name: CI pipeline
-on:
-  push:
-    branches: [master]
-  pull_request:
-permissions: read-all
-jobs:
-  build:
-    name: "Build ${{ matrix.os }} node${{ matrix.node-version }}"
-    runs-on: ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ ubuntu-latest, windows-latest ]
+
